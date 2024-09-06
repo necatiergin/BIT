@@ -11,8 +11,8 @@ int main()
     cout << format("{0:016b} {0:8}\n", rotl(x, 2));
     cout << format("{0:016b} {0:8}\n", rotr(x, 1));
     cout << format("{0:016b} {0:8}\n", rotr(x, -1));
-    cout << format("{0:016b} {0:8}\n", std::bit_floor(x)); 
-    cout << format("{0:016b} {0:8}\n", std::bit_ceil(x));  
+    cout << format("{0:016b} {0:8}\n", bit_floor(x)); 
+    cout << format("{0:016b} {0:8}\n", bit_ceil(x));  
     cout << format("has single bit?     {}\n", has_single_bit(x));
     cout << "count leading zero    : " << countl_zero(x) << '\n';
     cout << "count right one bits  : " << countr_one(x) << '\n';
